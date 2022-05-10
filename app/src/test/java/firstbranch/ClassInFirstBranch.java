@@ -3,10 +3,12 @@ package firstbranch;
 public class ClassInFirstBranch {
     String name;
     int roll;
+    int id;
 
-    public ClassInFirstBranch(String name, int roll) {
+    public ClassInFirstBranch(String name, int roll, int id) {
         this.name = name;
         this.roll = roll;
+        this.id = id;
     }
 
     public String getName() {
@@ -17,11 +19,19 @@ public class ClassInFirstBranch {
         this.name = name;
     }
 
+    public int getRoll() {
+        return roll;
+    }
+
     public void setRoll(int roll) {
         this.roll = roll;
     }
 
-    public int getRoll() {
-        return roll;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
